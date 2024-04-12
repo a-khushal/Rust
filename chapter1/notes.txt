@@ -1,0 +1,19 @@
+The main function is special: it is always the first code that runs in every executable Rust program
+println! calls a Rust macro. If it had called a function instead, it would be entered as println (without the !)
+Rust is an ahead-of-time compiled language, meaning you can compile a program and give the executable to someone else, and they can run it even without having Rust installed. If you give someone a .rb, .py, or .js file, they need to have a Ruby, Python, or JavaScript implementation installed (respectively). But in those languages, you only need one command to compile and run your program.
+
+cargo:
+$ cargo new hello_cargo
+$ cd hello_cargo
+
+The first command creates a new directory and project called hello_cargo. We’ve named our project hello_cargo, and Cargo creates its files in a directory of the same name.
+
+TOML: Tom’s Obvious, Minimal Language
+
+In Rust, packages of code are referred to as crates.
+
+We can create a project using cargo new.
+We can build a project using cargo build.
+We can build and run a project in one step using cargo run.
+We can build a project without producing a binary to check for errors using cargo check.
+Instead of saving the result of the build in the same directory as our code, Cargo stores it in the target/debug directory.
